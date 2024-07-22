@@ -1,0 +1,412 @@
+/* Poppins font style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: light;
+}
+
+/* share style here */
+::selection {
+    color: rgb(253, 110, 10);
+}
+
+.bg-secondary {
+    background: rgb(255, 248, 243);
+}
+
+.display-flex {
+    display: flex;
+}
+
+.navbar,
+.banner,
+.about,
+.skils-section,
+.project,
+.contact-container,
+hr {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+}
+
+.span {
+    color: rgb(253, 110, 10);
+}
+
+.btn-primary {
+    padding: .8rem 1.7rem;
+    background: rgb(253, 110, 10);
+    color: rgb(255, 255, 255);
+    border-radius: .5rem;
+    font-size: 1.25rem;
+    margin-right: 1rem;
+    font-weight: 700;
+}
+
+.btn-contact {
+    padding: .8rem 1.7rem;
+    background-color: transparent;
+    color: rgb(253, 110, 10);
+    font-size: 1.25rem;
+    border: 1px solid rgb(253, 110, 10);
+    border-radius: .5rem;
+    font-weight: 700;
+}
+
+.section-heading {
+    text-align: center;
+    color: rgb(24, 24, 24);
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+.section-description {
+    margin-top: 2rem;
+    max-width: 909px;
+    margin: 0 auto;
+}
+
+.heading-text {
+    text-align: center;
+}
+
+
+
+/* Header style start here */
+.header {
+    background-image: url("../images/developer.png"), url("../images/header_bg.png");
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    /* padding: 2rem; */
+}
+
+/* navbar */
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.navbar .logo-text {
+    font-size: 2.2rem;
+    color: rgb(24, 24, 24);
+}
+
+.navbar .nav-items .nav-item {
+    margin-right: 1.25rem;
+}
+
+.navbar .nav-item .nav-link {
+    color: rgb(71, 71, 71);
+    font-size: 1.25rem;
+}
+
+.navbar .btn-primary {
+    display: none;
+}
+
+/* banner */
+.banner {
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    /* align-items: center; */
+}
+
+.banner-container {
+    max-width: 585px;
+}
+
+.banner-container .banner-text {
+    color: rgb(71, 71, 71);
+    font-size: 1.25rem;
+    margin-top: 100px;
+    letter-spacing: 1px;
+}
+
+.banner-container .title {
+    font-size: 3.2rem;
+    margin-top: 1.8rem;
+    font-weight: 700;
+}
+
+.banner-container .description {
+    margin-top: 1.6rem;
+    color: rgb(117, 117, 117);
+    font-size: 1.12rem;
+    margin-bottom: 2rem;
+}
+
+.profile-img {
+    width: 584px;
+}
+
+/* Header style end here */
+
+/* main style start here  */
+
+/* about */
+.about {
+    margin-top: 100px;
+
+}
+
+.about-container {
+    margin-top: 3rem;
+    /* display: grid;
+   grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    gap: 2rem;
+    border-radius: 1rem;
+}
+
+.about-text {
+    max-width: 580px;
+}
+
+.about-text .about-description {
+    color: rgb(117, 117, 117);
+    text-align: justify;
+}
+
+.about-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.items-row {
+    margin-bottom: 20px;
+}
+
+.about-item {
+    border-radius: 5px;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    background: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.about-item .item-title {
+    color: rgb(117, 117, 117);
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.about-item .item-description {
+    color: rgb(24, 24, 24);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* what i do style style start here */
+.skils-section {
+    margin-top: 100px;
+}
+
+.skil-container {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+}
+
+.skils {
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    padding: 1.25rem;
+}
+
+.title {
+    margin-top: 1.25rem;
+    color: rgb(24, 24, 24);
+    font-size: 1.25rem;
+}
+
+.description {
+    margin-top: 1.25rem;
+    color: rgb(117, 117, 117);
+    text-align: justify;
+}
+
+/* what i do style style end here */
+
+/* project style start here */
+.project {
+    margin-top: 100px;
+}
+
+.project-container {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+}
+
+.project-visit {
+    border-radius: 10px;
+    background: rgb(250, 241, 234);
+    box-shadow: 0 .5rem 1.5rem rgba(5, 5, 5, 0.3);
+    padding: 10px;
+}
+
+.project-container img {
+    width: 100%;
+    border-radius: .5rem;
+    height: 170px;
+}
+
+/* project style end here */
+
+/* main style end here  */
+
+
+/* footer style start here */
+
+/* contact section style start here*/
+.contact-section {
+    margin-top: 100px;
+}
+
+.contact-section .section-heading {
+    padding-top: 2rem;
+}
+
+.contact-container {
+    margin-top: 3rem;
+    display: flex;
+    padding: 1.25rem;
+    gap: 2rem;
+}
+
+.my-info {
+    /* background-color: #fff; */
+    background: rgba(0, 76, 232, 0.05);
+    box-shadow: 0 .5rem 1.5rem rgba(5, 5, 5, 0.3);
+    width: 400px;
+    /* border: 2px solid red; */
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.my-info .work-img {
+    border: 2px solid rgba(253, 110, 10, 0.5);
+    padding: 10px;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 170px;
+}
+
+.my-info .my-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: rgb(24, 24, 24);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.my-info .post {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.my-info .phone {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.icons {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.icons img {
+    margin-right: 1rem;
+}
+
+.icons .twitter {
+    width: 36px;
+    height: 36px;
+}
+
+.contact-me {
+    background: rgba(0, 76, 232, 0.05);
+    box-shadow: 0 .5rem 1.5rem rgba(5, 5, 5, 0.3);
+    width: 800px;
+    /* border: 2px solid red; */
+    padding: 2rem;
+    border-radius: 16px;
+}
+
+form .input-box {
+    width: 100%;
+}
+
+form .input-box input,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+    resize: none;
+    border-radius: .5rem;
+    border: 1px solid rgba(253, 110, 10, 0.4);
+    background: rgb(255, 255, 255);
+    outline: none;
+    color: rgb(117, 117, 117);
+}
+
+.submit {
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1px solid rgba(253, 110, 10, 0.4);
+    background: rgb(255, 255, 255);
+    color: rgb(117, 117, 117);
+}
+
+form .column {
+    display: flex;
+    gap: 1.25rem;
+}
+
+/* contact section style end here*/
+
+/* copyright style  start here */
+hr {
+    margin-top: 3rem;
+    border: 1px solid rgba(253, 110, 10, 0.5);
+}
+
+.copyRight {
+    text-align: center;
+    margin: 1.5rem 0;
+    color: rgb(24, 24, 24);
+    font-size: 1.5rem;
+}
+
+/* copyright style end here */
+
+/* footer style end here */
+
+
+
+
+
+
+

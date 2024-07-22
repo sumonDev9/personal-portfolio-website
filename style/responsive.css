@@ -1,0 +1,175 @@
+/* phone responsive */
+@media screen and (max-width:576px) {
+    .header {
+        background-image: none;
+    }
+
+    /* navbar */
+    .navbar .nav-items {
+        display: none;
+    }
+
+    .navbar .logo-text {
+        margin-left: 1rem;
+    }
+
+    .navbar .btn-primary {
+        display: block;
+        padding: 5px 14px;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    /* banner */
+    .banner {
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    .banner-container .banner-text {
+        margin-top: 2rem;
+    }
+
+    .banner-container .title {
+        font-size: 2rem;
+    }
+
+    .banner-container .description {
+        font-size: .9rem;
+    }
+
+    .banner-container .btn-primary {
+        padding: 1rem .9rem;
+        font-size: 18px;
+    }
+
+    .banner-container .btn-contact {
+        padding: 1rem .9rem;
+        font-size: 18px;
+    }
+
+    .profile-img {
+        margin-top: 1.8rem;
+        width: 100%;
+    }
+
+    /* about */
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-items {
+        grid-template-columns: 1fr;
+    }
+
+    .items-row {
+        margin-bottom: 0px;
+    }
+
+    /* skils */
+    .skils-section {
+        margin: 3rem 1.25rem 0 1.25rem;
+    }
+
+    .skil-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* project */
+    .project {
+        margin: 3rem 1.25rem 0 1.25rem;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* contact form */
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .my-info {
+        width: 100%;
+    }
+
+    .contact-me {
+        width: 100%;
+    }
+
+    form .column {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    hr {
+        margin: 0 1.25rem;
+        margin-top: 1.25rem;
+    }
+}
+
+
+/* tablet  */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .header {
+        background-image: none;
+    }
+
+    .navbar .logo-text {
+        margin-left: 1rem;
+    }
+
+    .banner {
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    .banner-container .banner-text {
+        margin-top: 2rem;
+    }
+
+    .profile-img {
+        margin-top: 1.8rem;
+        width: 100%;
+    }
+
+    /* about */
+    .about-items {
+        grid-template-columns: 1fr;
+    }
+
+    .items-row {
+        margin-bottom: 0px;
+    }
+
+    /* skils */
+    .skils-section {
+        margin: 3rem 1.25rem 0 1.25rem;
+    }
+
+    .skil-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* project */
+    .project {
+        margin: 3rem 1.25rem 0 1.25rem;
+    }
+
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* contact form */
+    hr {
+        margin: 0 1.25rem;
+        margin-top: 1.25rem;
+    }
+
+    form .column {
+        flex-direction: column;
+        gap: 0;
+    }
+
+}
